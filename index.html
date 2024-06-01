@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>AWARD WINNING</h2>
+                <h1>DIGITAL MARKETING AGENCY</h1>
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante et elit fringilla ac at purus. Morbi sed lacus nec risus finibus feugiat et fermentum.</p>
+                <button class="btn btn-primary" id="contactUsBtn">Contact Us</button>
+            </div>
+            <div class="col-md-6">
+                <img src="public/img/highlight2.png" alt="Image description" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="public/img/highlight4 .png" alt="Slide 1">
+                    <div class="hover-content">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.</p>
+                        <button onclick="window.open('https: //fylehq.com', '_blank')">READ MORE</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="public/img/highlight1.png" alt="Slide 2">
+                    <div class="hover-content">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.</p>
+                        <button onclick="window.open('https: //fylehq.com', '_blank')">READ MORE</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="public/img/highlight5.png" alt="Slide 3">
+                    <div class="hover-content">
+                        <h2>WEB DEVELOPMENT</h2>
+                        <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque.</p>
+                        <button onclick="window.open('https: //fylehq.com', '_blank')">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    
+
+    <!-- Contact Us Popup Form -->
+    <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm" action="https://getform.io/f/zaxdeopa" method="POST">
+                <h3>Talk to us</h3>
+                <div class="form-group">
+                    <label for="email">Work email*</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Work email" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First name*</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name*</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="consent" name="consent" required>
+                    <label class="form-check-label" for="consent">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Contact Us</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <!-- OUR PROJECT section -->
+        <div class="our-project-section">
+            <h3>OUR PROJECT</h3>
+            <h2>WHY WE ARE BEST</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img id="projectImage" src="public/img/highlight2.png" class="img-fluid" alt="Project Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="project-content" data-image="public/img/highlight3.png">
+                        <h4>Genderless Kei – Japan’s Hot</h4>
+                        <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                    </div>
+                    <div class="project-content" data-image="public/img/highlight2.png">
+                        <h4>Better Strategy & Quality</h4>
+                        <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                    </div>
+                    <div class="project-content" data-image="public/img/highlight5.png">
+                        <h4>Genderless Kei – Japan’s Hot</h4>
+                        <p>Set to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Our Company Growth section -->
+       <div class="our-company-growth-section text-center">
+        <h3>OUR COMPANY GROWTH</h3>
+        <h2>EXPERTS GROWTH</h2>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="icon">❤️</div>
+                <div class="number">199+</div>
+                <div class="label">Satisfied Customers</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">📞</div>
+                <div class="number">1591+</div>
+                <div class="label">Days Of Operation</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">✔️</div>
+                <div class="number">283+</div>
+                <div class="label">Complete Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="icon">🏆</div>
+                <div class="number">75+</div>
+                <div class="label">Win Awards</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="public/js/script.js"></script>
+</body>
+</html>

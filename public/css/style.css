@@ -1,0 +1,219 @@
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Custom styles for the form */
+#contactForm h3 {
+    margin-bottom: 20px;
+}
+
+#contactForm .form-group {
+    margin-bottom: 15px;
+}
+
+#contactForm .form-check-label {
+    font-size: 14px;
+}
+
+/* What we do section styles */
+.what-we-do-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.what-we-do-section h3 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.what-we-do-section h2 {
+    margin-bottom: 40px;
+}
+
+.carousel-inner img {
+    height: 300px;
+}
+
+.carousel-item:hover .carousel-caption {
+    display: block;
+}
+
+.carousel-caption {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-item:hover .carousel-caption {
+    display: block;
+}
+/* OUR PROJECT section styles */
+.our-project-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.our-project-section h3 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.our-project-section h2 {
+    margin-bottom: 40px;
+}
+
+.project-content {
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-content:hover {
+    background-color: #f8f8f8;
+}
+
+.project-content.active {
+    background-color: #2c276d;
+    color: white;
+}
+
+.project-content h4 {
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    margin-bottom: 0;
+}
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.stat-card .icon {
+    font-size: 2em;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.stat-card .number {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-card .label {
+    font-size: 0.9em;
+    color: #888;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    display: block;
+}
+.hover-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background: #c50404;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.slide:hover .hover-content {
+    display: flex;
+}
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot.active {
+    background-color: #717171;
+}
